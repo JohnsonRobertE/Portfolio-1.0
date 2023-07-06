@@ -136,6 +136,7 @@ li a {
 .mainProject {
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
 .footer {
