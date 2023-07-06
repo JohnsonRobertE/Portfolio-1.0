@@ -1,106 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Robert Johnson</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="flex-container">
+      <div>
+        <header>
+          <h1>Robert Johnson's Portfolio</h1>
+          <nav>
+            <h3>Navigation</h3>
+            <ul class="navList">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Me</a></li>
+              <li><a href="#">Projects</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+      <div class="main">
         <div>
-            <header>
-                <h1>Robert Johnson's Portfolio</h1>
-                <nav>
-                    <h3>Navigation</h3>
-                        <ul class="navList">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About Me</a></li>
-                            <li><a href="#">Projects</a></li>
-                        </ul>
-                </nav>
-            </header>
+          <section class="section1">
+            <h2>About Me</h2>
+            <img
+              src="\images\20221208_112223.jpg"
+              style="width: 300px; height: 337px; object-fit: cover"
+              alt="Robert Johnson"
+            />
+            <div class="paragraph">
+              <h3>Bio</h3>
+              <p>
+                Robert Johnson is a software engineer based in Columbus, Ohio,
+                with a strong passion for Java development. With a
+                project-focused mindset, he excels at collaborating with team
+                members to deliver usable end products. Robert has extensive
+                experience serving as a squad leader, leveraging his analytical
+                skills and system knowledge to drive the creation of innovative
+                solutions.
+              </p>
+              <p>Phone Number: (614) 558 - 4243</p>
+            </div>
+            <a href="mailto:JohnsonRobertE809@gmail.com">
+              <img class="social" src="images\Gmail-Email-PNG-Pic.png" />
+            </a>
+            <a href="https://github.com/JohnsonRobertE">
+              <img class="social" src="images\github-mark.png" />
+            </a>
+            <a href="https://www.linkedin.com/in/robert-johnson-2489551a4">
+              <img class="social" src="images\In-Blue-128.png" />
+            </a>
+            <h3>Skills</h3>
+            <table>
+              <tr>
+                <th>Languages</th>
+                <th>Frameworks</th>
+                <th>Databases</th>
+                <th>Tools</th>
+              </tr>
+              <tr>
+                <td>Java</td>
+                <td>Spring</td>
+                <td>SQL</td>
+                <td>VS Code</td>
+              </tr>
+              <tr>
+                <td>JavaScript</td>
+                <td>Node</td>
+                <td></td>
+                <td>Git</td>
+              </tr>
+              <tr>
+                <td>HTML</td>
+                <td>React</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>Express</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </section>
         </div>
         <div>
-                <div>
-                    <div>
-                        <section class="section1">
-                            <h2>About Me</h2>
-                            <img src="\images\20221208_112223.jpg" 
-                            style="width: 300px; height: 337px; object-fit: cover;"
-                            alt="Robert Johnson">
-                            <h3>Bio</h3>
-                            <p>Robert Johnson is a software engineer based in Columbus, Ohio, with a strong passion for Java development.
-                            With a project-focused mindset, he excels at collaborating with team members to deliver usable end products. 
-                            Robert has extensive experience serving as a squad leader, leveraging his analytical skills and system knowledge to drive the creation of innovative solutions.</p>
-                            <p>Phone Number: (614) 558 - 4243</p>
-                            <a href="mailto:JohnsonRobertE809@gmail.com">
-                                <img class="social" src="images\Gmail-Email-PNG-Pic.png">
-                            </a>
-                            <a href="https://github.com/JohnsonRobertE">
-                                <img class="social" src="images\github-mark.png">
-                            </a>
-                            <a href="https://www.linkedin.com/in/robert-johnson-2489551a4">
-                                <img class="social" src="images\In-Blue-128.png">
-                            </a>
-                            <h3>Skills</h3>
-                            <table>
-                                <tr>
-                                    <th>Languages</th>
-                                    <th>Frameworks</th>
-                                    <th>Databases</th>
-                                    <th>Tools</th>
-                                </tr>
-                                <tr>
-                                    <td>Java</td>
-                                    <td>Spring</td>
-                                    <td>SQL</td>
-                                    <td>VS Code</td>
-                                </tr>
-                                <tr>
-                                    <td>JavaScript</td>
-                                    <td>Node</td>
-                                    <td></td>
-                                    <td>Git</td>
-                                </tr>
-                                <tr>
-                                    <td>HTML</td>
-                                    <td>React</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>CSS</td>
-                                    <td>Express</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </table>
-                        </section>
-                    </div>
-                    <div>
-                        <section class="section2">
-                            <h2>Projects</h2>
-                                <h3>Virtual Pet</h3>
-                                <ul>
-                                    <li>Extends abstract classes to increase reusability.</li>
-                                    <li>Text-based game that allows the creation of four species of pets.</li>
-                                    <li>Implements an interface to increase readability.</li>
-                                </ul>
-                                <img src="\images\Screenshot (22).png"
-                                alt="Virtual Pet App">
-                        </section>
-                    </div>
-                </div>
+          <section class="section2">
+            <h2>Projects</h2>
+            <h3>Virtual Pet</h3>
+            <ul>
+              <li>Extends abstract classes to increase reusability.</li>
+              <li>
+                Text-based game that allows the creation of four species of
+                pets.
+              </li>
+              <li>Implements an interface to increase readability.</li>
+            </ul>
+            <img src="\images\Screenshot (22).png" alt="Virtual Pet App" />
+          </section>
         </div>
-        <div>
-            <footer>
-                <p>Author: Robert Johnson</p>
-                <a href="mailto:JohnsonRobertE809@gmail.com">JohnsonRobertE809@gmail.com</a>
-            </footer>
-        </div>
+      </div>
+      <div>
+        <footer>
+          <p>Author: Robert Johnson</p>
+          <a href="mailto:JohnsonRobertE809@gmail.com"
+            >JohnsonRobertE809@gmail.com</a
+          >
+        </footer>
+      </div>
     </div>
-</body>
-
-
+  </body>
 </html>
