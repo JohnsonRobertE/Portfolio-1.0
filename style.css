@@ -28,6 +28,9 @@ p {
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
 }
 
 .flex-container {
@@ -100,5 +103,22 @@ li a {
     border-style: ridge;
     align-items: center;
     background-color: #f6d8ac;
+    padding: 10px;
+}
+
+.socialLinks {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 15px;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    border-style: ridge;
+    align-items: center;
+    background-color: #f6d8ac;
+    width: 800px;
+    padding: 10px;
 }
 
