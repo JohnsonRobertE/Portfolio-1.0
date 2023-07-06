@@ -79,3 +79,9 @@ li a {
     text-decoration: none;
 }
 
+.social {
+    width: auto;
+    height: 50px;
+    max-height: 50px;
+}
+
