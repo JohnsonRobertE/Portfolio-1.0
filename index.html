@@ -10,13 +10,13 @@
     <div class="flex-container">
       <div>
         <header>
-          <h1>Robert Johnson's Portfolio</h1>
+          <h1 id="home">Robert Johnson's Portfolio</h1>
           <nav>
             <h3>Navigation</h3>
             <ul class="navList">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Me</a></li>
-              <li><a href="#">Projects</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#About me">About Me</a></li>
+              <li><a href="#Projects">Projects</a></li>
             </ul>
           </nav>
         </header>
@@ -24,7 +24,7 @@
       <div class="main">
         <div>
           <section class="section1">
-            <h2>About Me</h2>
+            <h2 id="About me">About Me</h2>
             <img
               src="\images\20221208_112223.jpg"
               style="width: 300px; height: 337px; object-fit: cover"
@@ -73,28 +73,34 @@
             </div>
           </section>
         </div>
-        <div>
+        <div class="mainProject">
           <section class="section2">
-            <h2>Projects</h2>
-            <h3>Virtual Pet</h3>
-            <ul>
-              <li>Extends abstract classes to increase reusability.</li>
-              <li>
+            <h2 id="Projects">Projects</h2>
+            <div class="project1">
+              <h3>Virtual Pet</h3>
+              <p>
                 Text-based game that allows the creation of four species of
                 pets.
-              </li>
-              <li>Implements an interface to increase readability.</li>
-            </ul>
-            <img src="\images\Screenshot (22).png" alt="Virtual Pet App" />
+              </p>
+              <p>Extends abstract classes to increase reusability.</p>
+              <p>Implements an interface to increase readability.</p>
+            </div>
+            <div>
+              <img
+                src="\images\Screenshot (29).png"
+                width="800px"
+                alt="Virtual Pet App"
+              />
+            </div>
           </section>
         </div>
       </div>
       <div>
-        <footer>
-          <p>Author: Robert Johnson</p>
-          <a href="mailto:JohnsonRobertE809@gmail.com"
-            >JohnsonRobertE809@gmail.com</a
-          >
+        <footer class="footer">
+          <p><b>Author: Robert Johnson</b></p>
+          <a href="mailto:JohnsonRobertE809@gmail.com">
+            <img class="social" src="images\Gmail-Email-PNG-Pic.png" />
+          </a>
         </footer>
       </div>
     </div>
