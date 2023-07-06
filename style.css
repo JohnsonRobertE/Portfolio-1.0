@@ -5,8 +5,9 @@ img {
 }
 
 header {
-    max-width: 500px;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer {
@@ -14,6 +15,12 @@ footer {
     margin: auto;
 }
 
+p {
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    max-width: 800px;
+}
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
@@ -24,12 +31,23 @@ table, th, td {
     flex-direction: column;
 }
 .section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-style: ridge;
-    justify-content: center;
-    align-content: center;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: ridge;
 }
 
 nav {
-    border-style: ridge; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: ridge;
 }
 
