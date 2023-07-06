@@ -4,13 +4,6 @@ img {
     border-radius: 8px;
 }
 
-.flex-container {
-    display:flex;
-    flex-direction: column;
-    max-width: 500px;
-    margin: auto;
-}
-
 header {
     max-width: 500px;
     margin: auto;
@@ -24,4 +17,9 @@ footer {
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 80px 200px 80px;
 }
