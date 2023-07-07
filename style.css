@@ -145,3 +145,13 @@ li a {
     align-items: center;
 }
 
+.project2 {
+    display: flex;
+    flex-direction: column;
+    border-style: ridge;
+    align-items: center;
+    background-color: #f6d8ac;
+    padding: 10px;
+    width: 800px;
+}
+
