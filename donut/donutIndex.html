@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="donutStyle.css" />
+    <title>Donut Clicker</title>
+  </head>
+  <body>
+    <script src="./donutScript.js"></script>
+    <div class="flexContainer">
+      <header>
+        <h1 class="title">Donut Clicker</h1>
+        <div>
+          <nav>
+            <h2>Navigation</h2>
+            <div class="aboutDiv"><b>About</b></div>
+            <div class="hide">Fred the Baker Baking Company</div>
+            <div class="inspirationDiv"><b>Inspiration</b></div>
+            <div class="hide">
+              The inspiration for the game, Cookie Clicker.
+            </div>
+            <details>
+              <summary><b>Contact</b></summary>
+              <p><b>Author:</b> Robert Johnson</p>
+              <p>
+                <a href="mailto:JohnsonRobertE809@gmail.com">
+                  <img class="social" src="images/Gmail-Email-PNG-Pic.png" />
+                </a>
+              </p>
+            </details>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <div class="mainDiv">
+          <div>
+            <h3>Donuts</h3>
+            <p id="donutCount"></p>
+            <button onClick="donutCounter.increment()">Bake Donut</button>
+          </div>
+          <div>
+            <h3>Autoclicker Cost</h3>
+            <p id="autoCost"></p>
+            <p id="autoCount"></p>
+            <button id="autoB" onClick="donutCounter.addAuto()">
+              Buy AutoClicker
+            </button>
+          </div>
+          <div>
+            <h3>MultiClicker Cost</h3>
+            <p id="multiCost"></p>
+            <p id="multiCount"></p>
+            <button id="multiB" onClick="donutCounter.addMulti()">
+              Buy ClickMultiplier
+            </button>
+          </div>
+          <div>
+            <button onclick="donutCounter.reset()">Reset</button>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <img src="images/pug.png" />
+      </footer>
+    </div>
+    <script>
+      let donutCounter = displayDonutCount(
+        "donutCount",
+        "autoCount",
+        "multiCount",
+        "autoCost",
+        "multiCost"
+      );
+      window.setInterval(donutCounter.tick, 1000);
+    </script>
+  </body>
+</html>
